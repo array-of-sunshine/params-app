@@ -8,4 +8,9 @@ class Api::PagesController < ApplicationController
     @message = params[:the_message]
     render "the_segment.json.jbuilder"
   end
+
+  def body_method
+
+    render "the_body.json.jbuilder"
+  end
 end
