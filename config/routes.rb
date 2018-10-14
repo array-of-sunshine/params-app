@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
     # http://localhost:3000/api/params_route?name=joe&last_name=horseman&id=3
-    get '/params_route' => 'pages#first'
+    get '/query_params_route' => 'pages#query'
   end
 end

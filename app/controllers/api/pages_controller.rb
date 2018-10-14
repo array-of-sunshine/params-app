@@ -1,6 +1,6 @@
 class Api::PagesController < ApplicationController
-  def first
-    @name = params["name"].upcase
-    render "first.json.jbuilder"
+  def query
+    @name = params[:name]
+    render "the_query.json.jbuilder"
   end
 end
